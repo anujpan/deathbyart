@@ -5,12 +5,26 @@
 		</title>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+		$( document ).ready(function() {
+			$("#close").click(function(){
+				$("#modal").addClass("remove");
+			});			
+		});
+		</script>
 	</head>
 
 	<body>
-		<a target="_blank" href="https://s3.amazonaws.com/www.ripdba.com/dba_map_colors.pdf"><img id="first-floor" src="death_by_art_large.png">
-		<img id="second-floor" src="death_by_art_floor.png">
-	</a>
+		<a id="map" target="_blank" href="https://s3.amazonaws.com/www.ripdba.com/dba_map_colors.pdf">
+			<img id="first-floor" src="death_by_art_large.png">
+			<img id="second-floor" src="death_by_art_floor.png">
+
+			<span class="map-hover">
+				See Detail
+			</span>
+		</a>
 
 		<div id="event-info">
 			<div id="info">
@@ -317,6 +331,13 @@
 					<a target="_blank" href="http://powerboat.robysoft.net/">Nick Santaniello</a>
 				</li>
 			</ul>
+		</div>
+
+		<div id="modal">
+			<div id="close">X</div>
+			<p>The show is <b>FREE</b> on <b>THURSDAY NOV 6TH</b> plus every <b>Saturday-Sunday</b> from <b>2PM-7PM</b> until <b>NOVEMBER 22ND</b></p>
+
+			<p>The show will <b>ALSO</b> be open to the patrons of the venue <b>EVERY EVENING</b> from <b>8PM to MIDNIGHT</b> included with the price of admission.</p>
 		</div>
 	</body>
 </html>
